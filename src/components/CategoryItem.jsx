@@ -1,4 +1,3 @@
-import { Info } from "@material-ui/icons";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -6,6 +5,7 @@ flex: 1;
 margin: 3px;
 height: 70vh;
 position: relative;
+background-color: orange;
 `;
 
 const Image = styled.img`
@@ -19,14 +19,14 @@ color: white;
 margin-bottom: 20px;
 `;
 
-const INfo = styled.div`
+const Info = styled.div`
 position: absolute;
 top: 0;
 left: 0;
 width: 100%;
 height: 100%;
 display: flex;
-flex-direction: coloumn;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 `;
@@ -38,16 +38,17 @@ background-color: white;
 color: gray;
 cursor: pointer;
 font-weight: 600;
+font-size: 15px;
 `;
 
 export const CategoryItem = ({item}) => {
     return (
         <Container>
             <Image src={item.img}/>
-            <INfo>
+            <Info>
                 <Title>{item.title}</Title>
                 <Button>SHOW NOW</Button>
-            </INfo>
+            </Info>
         </Container>
     )
 }
