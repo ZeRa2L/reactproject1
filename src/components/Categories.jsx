@@ -8,14 +8,12 @@ padding: 20px;
 justify-content: space-between;
 `
 
-export const Categories = () => {
-    return (
-        <Container>
+const Categories = () => {
+    return <Container>
             {categories.map(item=>(
-                <CategoryItem item={item}/>
+                <CategoryItem item={item} key={item.id} />
             ))}
-        </Container>
-    )
+        </Container>;
 }
 
 export default Categories
