@@ -50,12 +50,10 @@ background-color: #${props=>props.bg};
 const ImgContainer = styled.div`
 height: 100%;
 flex: 1;
-background-color: orange;
 `;
 
 const Image = styled.div`
 height: 80%;
-background-color: red;
 `;
 
 const InfoContainer = styled.div`
